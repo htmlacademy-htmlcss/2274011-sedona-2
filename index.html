@@ -5,9 +5,11 @@
     <title>HTML Academy: Седона</title>
   </head>
  <body>
-    <header class="main-header">
+    <header class="page-header">
+      <a href="#" class="logo">
+        <img class="logo" src="#" alt="Логотип SEDONA" width="40" height="26">
+      </a>
       <nav class="navigation">
-        <img class="logo" src="#" alt="Логотип SEDONA">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Главная</a>
@@ -42,6 +44,9 @@
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Седона</h1>
+      <section class="banner">
+        <img src="#" width="" height="" alt="Набережная Седоны">
+      </section>
       <section class="about">
         <h2 class="visually-hidden">О Седоне</h2>
         <!--О Седоне-->
@@ -108,7 +113,7 @@
         <!--Подпишись на рассылку-->
         <p class="about-title">Заинтересовались?</p>
         <p class="about-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button" href="#">Поиск гостиницы в Седоне</a>
+        <button type="button" class="btn-search">Поиск гостиницы в Седоне</button>
       </aside>
       <section class="interest-search">
         <p class="about-title">Подпишитесь на рассылку</p>
@@ -118,16 +123,32 @@
           <input type="email" id="interest-search-name" name="interest-search-name" placeholder="Ваш e-mail">
           <button class="button" type="submit">Подписаться</button>
         </form>
-        <!--Заинтересовались с кнопкой поиска-->
       </section>
     </main>
     <footer class="main-footer">
       <!-- Подвал сайта -->
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-
+        <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+        <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <img class="logo" src="#" alt="Логотип html.academy">
       </section>
-      <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     </footer>
   </body>
 </html>
