@@ -37,9 +37,8 @@
               </span>
             </a>
           </li>
-          <a class="button" href="#">Хочу сюда!</a>
-          <!--кнопка "Хочу сюда!" с якорем на блок "Заинтересовались"-->
         </ul>
+          <a class="button" href="#">Хочу сюда!</a>
         </nav>
     </header>
     <main class="main-inner">
@@ -56,12 +55,12 @@
       </header>
 
       <!--фильтры каталога-->
-            <section class="catalog-products">
+        <section class="catalog-products">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
         <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфтраструктура:</legend>
+            <legend class="catalog-filter-title">Инфраструктура:</legend>
           </fieldset>
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
@@ -84,8 +83,7 @@
               </li>
               </ul>
         <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип Жилья:</legend>
-             <legend class="catalog-filter-title">Группы товаров</legend>
+          <legend class="catalog-filter-title">Тип Жилья:</legend>
           <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -99,18 +97,44 @@
               Motel
                 </label>
               </li>
-                            <li class="catalog-filter-item">
-                <label class="control">
+                <li class="catalog-filter-item">
+                 <label class="control">
                   <input class="control-input" type="radio" name="product-group" value="apartment">
               Апартаменты
-                </label>
-              </li>
+                 </label>
+                </li>
               </ul>
           </fieldset>
 
           <button class="button" type="submit">Показать</button>
           <button class="button" type="submit">Сбросить</button>
         </form>
+
+       <select class="select-control" aria-label="Сортировка">
+          <option value="popular">Сначала популярные</option>
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <a href="#" class="button button-light">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <a class="button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <ul class="hotel-list">
+          <li class="hotel-card">
+            <a class="hotel-card-link" href="hotel.html">
+              <img class="hotel-card-image" src="" alt="">
+              <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+            </a>
+            <span class="hotel-card-price">Гостиница</span>
+            <span class="hotel-card-price">От 4000 ₽</span>
+            <a class="hotel-card-button button" href="#">Подробнее</a>
+            <a class="hotel-card-button button" href="#">В избранное</a>
+            <span></span>
+            <a class="hotel-card-button button" href="#">Рейтинг: 8,5</a>
+          </li>
+          </ul>
       </section>
 
 
