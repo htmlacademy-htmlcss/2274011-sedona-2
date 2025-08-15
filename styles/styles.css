@@ -56,6 +56,7 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #756157;
+  border: 0;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -85,7 +86,7 @@ h2 {
 .interest-search {
   color: #ffffff;
   background-color: #ffffff;
-  background-image: url("../images/form.jpg");
+  background-image: url("/images/form.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -106,10 +107,10 @@ h2 {
   background-color: #82b3d3;
 }
 
-.catalog-filter{
+.catalog-filter {
   color: #ffffff;
   background-color: #ffffff;
-  background-image: url("../images/catalog/catalog-filter.jpg");
+  background-image: url("/images/catalog/catalog-filter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -126,10 +127,36 @@ h2 {
   line-height: 24px;
 }
 
-.control{
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
+.catalog-found{
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+}
+
+.control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-rating-score{
+font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+}
+
+.button-favorite{
+  background-color: #82b3d3;
+  border: 0;
 }
 
 /*футер*/
