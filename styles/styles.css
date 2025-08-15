@@ -85,7 +85,7 @@ h2 {
 .interest-search {
   color: #ffffff;
   background-color: #ffffff;
-  background-image: url("/images/form.jpg");
+  background-image: url("../images/form.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -109,7 +109,7 @@ h2 {
 .catalog-filter{
   color: #ffffff;
   background-color: #ffffff;
-  background-image: url("images/catalog/catalog-filter.jpg");
+  background-image: url("../images/catalog/catalog-filter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
