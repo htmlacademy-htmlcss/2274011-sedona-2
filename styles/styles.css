@@ -44,8 +44,20 @@ body {
 
   font-size: 18px;
   line-height: 21px;
-  color:#333333;
+  color: #333333;
   background-color: #ffffff;
+}
+
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -64,6 +76,70 @@ h2 {
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.interest-search {
+  color: #ffffff;
+  background-color: #ffffff;
+  background-image: url("/images/form.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.interest-search-form button {
+  background-color: #82b3d3;
+}
+
+.catalog-filter{
+  color: #ffffff;
+  background-color: #ffffff;
+  background-image: url("/images/catalog/catalog-filter.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.control{
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+}
+
+/*футер*/
+.footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h1.visually-hidden,
