@@ -112,14 +112,15 @@ h2 {
 
 .logo {
   margin-right: 30px;
+  margin-top: auto;
 }
 
 .navigation {
   display: flex;
   align-items: center;
-  gap: 40px; 
-  flex-grow: 1; 
-  justify-content: space-between; 
+  gap: 40px;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .navigation-list {
@@ -150,6 +151,7 @@ h2 {
 .banner-main {
   background: url("../images/white-line.png") bottom no-repeat,
     url("../images/banner-bg.jpg") center no-repeat;
+  background-color: #467aa4;
   width: 1200px;
   height: 485px;
   display: flex;
@@ -189,7 +191,7 @@ h2 {
 }
 .advantages-text {
   flex: 1;
-  padding:102px 80px;
+  padding: 102px 80px;
 }
 
 .advantages-item {
@@ -205,7 +207,6 @@ h2 {
 
 .advantages-list li:not(.main-item) {
   padding: 102px 80px;
-
 }
 
 .advantages-item.main-item {
@@ -214,7 +215,6 @@ h2 {
   align-items: center;
   flex-direction: row;
 }
-
 
 /*страницы*/
 .page-header {
@@ -247,7 +247,7 @@ h2 {
   background-image: url("../images/form.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  background-color: #756157;
+  background-color: #467aa4;
   color: #ffffff;
 }
 
@@ -255,10 +255,11 @@ h2 {
   background-color: #82b3d3;
 }
 
-.catalog-hotels {
+.catalog-hotels-filter {
   background-image: url("../images/catalog/catalog-filter.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  background-color: #467aa4;
 }
 
 .catalog-hotels form {
