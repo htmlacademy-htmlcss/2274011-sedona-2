@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
@@ -9,11 +10,12 @@
     <div class="container">
       <header class="page-header">
         <a href="index.html" class="logo">
-          <img class="logo" src="images/logo-sedona.svg" alt="Логотип SEDONA"
+          <img class="logo-img" src="images/logo-sedona.svg"
+            alt="Логотип SEDONA"
             width="140" height="70">
         </a>
         <nav class="navigation">
-          <ul class="navigation-list">
+          <ol class="navigation-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
@@ -24,9 +26,7 @@
               <a class="navigation-link navigation-link-current"
                 href="catalog.html">Гостиницы</a>
             </li>
-          </ul>
-          <!--/nav>
-        <nav class="navigation-user"-->
+          </ol>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
@@ -117,8 +117,8 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset>
-                <legend>Стоимость, ₽:</legend>
+              <fieldset class="catalog-filter-group">
+                <legend class="catalog-filter-title" >Стоимость, ₽:</legend>
                 <label for="price-from">от</label>
                 <input type="number" id="price-from" name="price-from" min="0"
                   value="0" required>
@@ -128,11 +128,14 @@
                 <input type="range" id="price-range" name="price-range" min="0"
                   max="12000" step="1000" aria-label="Ползунок стоимости">
               </fieldset>
-              <button class="button button-favorite"
-                type="submit">Применить</button>
-              <button class="button" type="reset">Сбросить</button>
+              <div class="filer-botton">
+                <button class="button button-favorite"
+                  type="submit">Применить</button>
+                <button class="button" type="reset">Сбросить</button>
+              </div>
             </form>
           </div>
+          <div class="header-catalog">
           <h2 class="advantages-header-title">
             Найдено гостиниц: 38
           </h2>
@@ -158,6 +161,7 @@
               </button>
             </li>
           </ul>
+          </div>
           <ul class="hotel-list">
             <li class="hotel-card">
               <a class="hotel-card-link" href="hotel.html">
@@ -285,29 +289,39 @@
           </form>
         </section>
       </main>
-      <footer class="main-footer">
+<footer class="main-footer">
         <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a href="https://vk.com/htmlacademy"
+                target="_blank">
+                <span class="icon-vk"></span>
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a href="https://t.me/htmlacademy"
+                target="_blank">
+                <span class="icon-tg"></span>
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="#">
+              <a class
+                href="https://www.youtube.com/user/htmlacademyru"
+                target="_blank">
+                <span class="icon-youtube"></span>
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
           </ul>
-          <a class="footer-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <img class="logo" src="images/logo_htmlacademy.svg" width="115"
-            height="33" alt="Логотип html.academy">
+          <a class="footer-phone" href="tel:+78128121212">+7 (812)
+            812-12-12</a>
+          <a href="https://htmlacademy.ru/" target="_blank">
+            <img class="logo" src="images/logo_htmlacademy.svg" width="115"
+              height="33" alt="Логотип html.academy">
+          </a>
         </section>
       </footer>
     </div>
