@@ -158,6 +158,8 @@ img {
 .navigation-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+
   padding: 0;
   margin: 0;
   gap: 8px;
@@ -169,6 +171,8 @@ img {
 
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
+
   gap: 8px;
   align-items: center;
   margin-right: 20px;
@@ -593,13 +597,19 @@ input[type="email"] {
 }
 
 /*каталог*/
+.catalog-hotel-cards {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
 .hotel-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  padding: 0 40px 70px;
+  padding: 0;
+  margin: 0;
 }
 
 .hotel-card {
@@ -607,6 +617,7 @@ input[type="email"] {
   height: 438px;
   padding: 20px;
   display: flex;
+  margin-top: 20px;
   flex-direction: column;
   border: 1px solid #e5e5e5;
   justify-content: space-between;
@@ -683,12 +694,19 @@ input[type="email"] {
 }
 
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
   color: #ffffff;
   background-color: #82b3d3;
   text-decoration: none;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
+  width: 60px;
+  height: 60px;
+  padding: 14px 20px;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .pagination-link [aria-current="page"] {
@@ -696,13 +714,20 @@ input[type="email"] {
   background-color: #f2f2f2;
 }
 
+.pagination-ellipsis {
+  background-color: #ffffff;
+  color: inherit;
+}
+
 .pagination {
   display: flex;
   justify-content: flex-start;
   margin-top: 40px;
-  margin-left: 70px;
   gap: 8px;
   align-items: center;
+  list-style: none;
+  margin-bottom: 60px;
+  padding: 0;
 }
 /*футер*/
 .footer-phone {
@@ -722,6 +747,7 @@ input[type="email"] {
 }
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   align-items: center;
   gap: 13px;
@@ -762,8 +788,13 @@ input[type="email"] {
   display: block;
 }
 
-h1.visually-hidden,
-h2.visually-hidden,
-span.visually-hidden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
