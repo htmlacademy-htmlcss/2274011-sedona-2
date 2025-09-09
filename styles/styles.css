@@ -616,107 +616,10 @@ input[type="email"] {
   background-color: #7db54f;
 }
 
-/*каталог*/
-/*
-.catalog-hotel-cards {
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-.hotel-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.hotel-card {
-  width: 300px;
-  height: 438px;
-  padding: 20px;
-  display: flex;
-  margin-top: 20px;
-  flex-direction: column;
-  border: 1px solid #e5e5e5;
-  justify-content: space-between;
-}
-
-.hotel-card-link {
-  text-decoration: none;
-}
-
-.hotel-card-image {
-  width: 100%;
-}
-
-.hotel-card-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  margin: 0;
-}
-
-.hotel-card-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-  text-decoration: none;
-  margin: 0 auto;
-  padding-top: 16px;
-}
-
-.hotel-card-info p {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0;
-}
-
-.hotel-action {
-  display: flex;
-  margin: 0;
-  height: 36px;
-  gap: 10px;
-}
-
-.hotel-card-button {
-  padding: 8px 26px;
-  flex: 1;
-}
-
-.hotel-rating {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  text-align: center;
-}
-
-.hotel-rating-score {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: #f2f2f2;
-  color: initial;
-  padding: 8px 22px;
-  margin: 0;
-}
-
-.button-favorite {
-  background-color: #82b3d3;
-  border: 0;
-  text-wrap: nowrap;
-  padding: 8px 20px;
-  color: white;
-}
-*/
 .title-catalog {
   margin-bottom: 0;
 }
+
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -779,7 +682,7 @@ input[type="email"] {
   display: grid;
   grid-template-columns: 140px 140px;
   font-size: 14px;
-  color: #555;
+  color: #555555;
   gap: 20px;
 }
 
@@ -810,6 +713,7 @@ input[type="email"] {
   text-transform: uppercase;
   align-items: center;
 }
+
 .hotel-rating-score {
   background-color: #f2f2f2;
   border-radius: 4px;
@@ -821,8 +725,6 @@ input[type="email"] {
   min-width: 288px;
   margin-left: 70px;
 }
-
-/**/
 
 .pagination-link {
   display: block;
@@ -867,7 +769,6 @@ input[type="email"] {
   color: #000000;
 }
 
-/*футер*/
 .footer-phone {
   font-size: 40px;
   line-height: 40px;
@@ -877,12 +778,6 @@ input[type="email"] {
   text-align: center;
 }
 
-/*.footer-contacts {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 30px;
-}*/
 .main-footer {
   display: flex;
   justify-content: space-between;
@@ -898,19 +793,17 @@ input[type="email"] {
   flex-wrap: wrap;
   list-style: none;
   align-items: center;
-  gap: 13px;
   padding: 0;
   margin: 0;
 }
 
 .footer-social-item {
   flex-shrink: 0;
+  padding: 13px 11px;
 }
 
 .icon-vk {
   background-image: url("../images/icons/icon-vk.svg");
-  width: 40px;
-  height: 30px;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -925,8 +818,6 @@ input[type="email"] {
 
 .icon-tg {
   background-image: url("../images/icons/icon-telegram.svg");
-  width: 40px;
-  height: 30px;
   background-repeat: no-repeat;
   background-position: center;
   display: block;
