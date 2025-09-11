@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,32 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../fonts/pt-sans-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-bold-italic.woff2") format("woff2");
-  font-display: swap;
-}
-
-/* PT Sans Narrow */
-@font-face {
-  font-family: "PT Sans Narrow";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -63,7 +38,7 @@ body {
 }
 
 .button {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -74,18 +49,15 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   padding: 8px 34px;
-  opacity: none;
 }
 
 .button-main {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  margin-top: 54px;
 }
 
-h1 {
-  font-family: "PT Sans", sans-serif;
+/*h1 {
 
   font-weight: 700;
   font-size: 60px;
@@ -94,7 +66,6 @@ h1 {
 }
 
 h2 {
-  font-family: "PT Sans", sans-serif;
 
   font-weight: 700;
   font-size: 20px;
@@ -105,24 +76,14 @@ p {
   margin: 0 auto;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 legend {
   margin: 0;
   padding: 0;
-}
+}*/
 
-.icon-search,
-.icon-heart {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #000000;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .page-header {
@@ -131,6 +92,7 @@ legend {
   justify-content: center;
   box-sizing: border-box;
   color: #000000;
+  height: 64px;
 }
 
 .logo {
@@ -140,8 +102,13 @@ legend {
   position: relative;
 }
 .logo-img {
+  display: block;
   width: 140px;
   height: 70px;
+}
+
+.icon {
+  display: block;
 }
 
 .navigation {
@@ -157,7 +124,6 @@ legend {
 
   padding: 0;
   margin: 0;
-  gap: 8px;
 }
 
 .navigation-main {
@@ -167,11 +133,10 @@ legend {
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
-
-  gap: 8px;
   align-items: center;
   margin-right: 20px;
 }
+
 .banner {
   padding: 0 70px;
   display: block;
@@ -185,7 +150,7 @@ legend {
   background-size: auto, cover;
   background-position: center bottom, center;
   background-color: #467aa4;
-
+  color: #ffffff;
   padding-top: 51px;
   padding-bottom: 82px;
 }
@@ -197,13 +162,22 @@ legend {
   padding-left: 70px;
 }
 
-.advantages-header-title {
+.main-header-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-header {
+  margin-bottom: 21px;
+}
+
+.advantages-header-title {
+  margin-bottom: 25px;
 }
 
 .advantages-header-description {
@@ -211,6 +185,12 @@ legend {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages-header-description--margin {
+  margin-bottom: 54px;
 }
 
 .advantages-list {
@@ -221,17 +201,15 @@ legend {
   flex-wrap: wrap;
   text-align: center;
 }
+
 .advantages-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 400px;
+  min-height: 385px;
   box-sizing: border-box;
   background-color: #83b3d31f;
-}
-
-.advantages-item:not(.main-item) {
-  padding: 112px 85px;
 }
 
 .advantages-img {
@@ -257,13 +235,16 @@ legend {
   margin-right: auto;
 }
 
-.advantages-description {
-  padding: 0;
-}
-
 .advantages-text {
   padding: 102px 85px;
   box-sizing: border-box;
+  justify-content: center;
+}
+
+.advantages-description {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
 }
 
 .main-item {
@@ -276,6 +257,7 @@ legend {
 .advantages-item:nth-child(odd):not(.main-item) {
   background-color: #83b3d333;
 }
+
 .item-service {
   padding: 81px 85px;
 }
@@ -286,7 +268,6 @@ legend {
   height: 72px;
   margin-bottom: 30px;
 }
-
 .service-icon-food {
   background-image: url("../images/icons/food-icon.svg");
   background-repeat: no-repeat;
@@ -327,7 +308,6 @@ legend {
 }
 
 .advantages-title {
-  font-family: "PT Sans Narrow", sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -357,7 +337,6 @@ legend {
 
 .interest-search-form {
   display: flex;
-  margin-top: 54px;
 }
 
 input[type="email"] {
@@ -368,6 +347,7 @@ input[type="email"] {
   width: 452px;
   background-color: #f2f2f2;
   border: 0;
+  box-sizing: border-box;
 }
 
 .interest-search-bg {
@@ -381,6 +361,7 @@ input[type="email"] {
 .interest-search-form button {
   background-color: #82b3d3;
   margin-top: 0;
+  min-width: 210px;
 }
 
 .interest-search-email {
@@ -476,6 +457,7 @@ input[type="email"] {
   width: 143px;
   margin-bottom: 36px;
 }
+
 .catalog-filter-group input[type="range"] {
   color: #ffffff;
   width: 100%;
@@ -510,9 +492,11 @@ input[type="email"] {
 .service-icon-home {
   display: block;
 }
+
 .navigation-link:hover path {
   fill: #467aa4;
 }
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -773,7 +757,7 @@ input[type="email"] {
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
-  color: #000000;
+  color: inherit;
   text-transform: uppercase;
   text-align: center;
 }
@@ -781,10 +765,7 @@ input[type="email"] {
 .main-footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
-  margin-bottom: 30px;
-  margin-left: 70px;
-  margin-right: 70px;
+  padding: 40px 70px 30px;
   align-items: center;
 }
 
@@ -799,28 +780,6 @@ input[type="email"] {
 
 .footer-social-item {
   flex-shrink: 0;
-  padding: 13px 11px;
-}
-
-.icon-vk {
-  background-image: url("../images/icons/icon-vk.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-}
-
-.icon-youtube {
-  background-image: url("../images/icons/icon-youtube.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
-}
-
-.icon-tg {
-  background-image: url("../images/icons/icon-telegram.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
 }
 
 .visually-hidden {
