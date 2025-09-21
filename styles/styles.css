@@ -71,10 +71,11 @@ img {
   justify-content: center;
   box-sizing: border-box;
   color: #000000;
-  height: 64px;
 }
 
 .logo {
+  display: block;
+  height: 70px;
   width: 140px;
   margin-bottom: -9px;
   position: relative;
@@ -122,7 +123,6 @@ img {
 }
 
 .banner {
-  padding: 0 70px;
   display: block;
   margin: 0 auto;
 }
@@ -247,7 +247,7 @@ img {
 }
 
 .item-service {
-  padding: 81px 85px;
+  padding: 81px 79px;
   justify-content: center;
 }
 
@@ -279,7 +279,7 @@ img {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  padding: 22px 12px;
+  padding: 20px 12px;
   color: inherit;
   position: relative;
   display: block;
@@ -289,7 +289,7 @@ img {
   display: block;
 }
 
-.navigation-link:hover path {
+.navigation-link:hover svg {
   fill: #467aa4;
 }
 
@@ -297,8 +297,8 @@ img {
   content: "";
   position: absolute;
   height: 2px;
-  right: 0px;
-  bottom: 0px;
+  right: 0;
+  bottom: 0;
   background-color: #756257;
   width: 100%;
 }
@@ -416,8 +416,11 @@ input[type="email"] {
   user-select: none;
   display: flex;
   align-items: center;
-  gap: 8px;
   font-weight: 400;
+  position: relative;
+  font-size: 18px;
+  line-height: 23px;
+  padding-left: 23px;
 }
 
 .control-input {
@@ -426,12 +429,58 @@ input[type="email"] {
   cursor: pointer;
 }
 
-.control-input[type="checkbox"] {
-  accent-color: #ffffff;
+.control-input[type="radio"] + .control-mark {
+  border-radius: 100%;
+  background-color: white;
 }
 
-.control-input[type="radio"] {
-  accent-color: #ffffff;
+.control-input[type="checkbox"] + .control-mark {
+  background-color: white;
+  border-radius: 4px;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  content: "";
+  border-radius: 50%;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ffffff;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 12px;
+  height: 10px;
+  content: "";
+  background-image: url("../images/icons/form-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+.control-label {
+  padding-left: 16px;
+}
+
+.range-input[type="number"]::-webkit-outer-spin-button,
+.range-input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.range-input::placeholder {
+  float: right;
 }
 
 .filer-botton {
@@ -445,7 +494,6 @@ input[type="email"] {
 }
 
 .catalog-filter-group input[type="number"] {
-  width: 70px;
   height: 40px;
   padding: 0 12px;
   border: none;
@@ -459,48 +507,55 @@ input[type="email"] {
   outline: none;
   vertical-align: middle;
   width: 143px;
-  margin-bottom: 36px;
 }
 
-.group-price {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.range-wrapper-inputs {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 42px;
 }
 
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16px;
-  background-color: #242424;
-  border-radius: 2px;
+  background-color: #d9d9d9;
 }
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #af7842;
+  background-color: #ffffff;
 }
 .range-toggle {
   position: absolute;
   width: 20px;
   height: 20px;
   background: #ffffff;
-  border: 2px solid #242424;
-  border-radius: 50%;
+  border: 3px solid transparent;
+  border-radius: 5px;
   cursor: pointer;
+  top: -8px;
 }
 
 .range-toggle:hover {
-  background-color: #dbb590;
+  border: 3px solid #83b3d3;
 }
 
 .range-toggle:active,
 .range-toggle:focus {
-  outline: 3px solid #dbb590;
+  border: 3px solid #83b3d3;
 }
 
-.toggle-min {
+.control-mark:active {
+  border: 2px solid #83b3d3;
+}
+
+.control-mark:hover,
+.control-mark:focus {
+  border: 3px solid #83b3d3;
+}
+
+.control-mark:focus .toggle-min {
   top: -8px;
-  left: -10px;
 }
 
 .toggle-max {
@@ -511,24 +566,33 @@ input[type="email"] {
 .breadcrumbs {
   list-style: none;
   padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 40px;
+  gap: 10px;
 }
 
 .breadcrumbs-item + .breadcrumbs-item::before {
-  content: "›";
-  margin: 0 8px;
+  content: " ";
+  display: inline-block;
+  align-items: center;
   color: rgba(255, 255, 255, 0.5);
+  background-image: url("../images/icons/breadcrumbs.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 20px;
+  height: 8px;
+  margin-right: 8px;
 }
 
 .breadcrumbs-item {
-  padding-right: 6px;
+  display: flex;
+  align-items: center;
 }
+
 .breadcrumbs-link {
   font-weight: 400;
   font-size: 16px;
@@ -547,14 +611,6 @@ input[type="email"] {
   font-size: 20px;
   line-height: 24px;
   padding-bottom: 32px;
-}
-
-.hotel-rating-stars {
-  display: inline-block;
-  width: 140px;
-  height: 34px;
-  background-image: url("../images/icons/four-stars-icon.svg");
-  overflow: hidden;
 }
 
 .header-catalog {
@@ -578,7 +634,47 @@ input[type="email"] {
   width: 48px;
   height: 48px;
   padding: 0;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
   gap: 8px;
+}
+
+.catalog-view-button:focus {
+  border: 2px solid #68a2ca;
+}
+
+.catalog-view-button:hover,
+.catalog-view-button:active {
+  border: 2px solid #000000;
+}
+
+.select-control:hover,
+.select-control:focus,
+.select-control:active {
+  border: 2px solid #68a2ca;
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.view-list {
+  background-image: url("../images/icons/view-list-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+.view-cards {
+  background-image: url("../images/icons/view-one-card-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+}
+.view-catalog {
+  background-image: url("../images/icons/view-cards-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 16px;
 }
 
 .catalog-found {
@@ -589,17 +685,14 @@ input[type="email"] {
 }
 
 .select-control {
+  appearance: none;
   border: 2px solid #e5e5e5;
+  background-image: url("../images/icons/arrow.svg");
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
+  background-size: 12px;
   width: 292px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 20px;
-}
-
-.control {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
+  padding: 14px 20px;
 }
 
 .filer-botton {
@@ -623,6 +716,7 @@ input[type="email"] {
 
 .button-favorite:active {
   background-color: #82b3d3;
+  border: 3px solid rgba(131, 179, 211, 1);
 }
 
 .button-favorite:hover {
@@ -638,6 +732,7 @@ input[type="email"] {
 
 .button-reset {
   background-color: transparent;
+  border: 3px solid transparent;
 }
 
 .button-reset:hover {
@@ -717,6 +812,16 @@ input[type="email"] {
   padding: 0;
 }
 
+.hotel-card-info {
+  padding: 0;
+  margin: 0;
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .hotel-card-type {
   margin: 0;
   padding: 0;
@@ -728,6 +833,44 @@ input[type="email"] {
   padding: 0;
   align-content: center;
   text-align: end;
+}
+
+.hotel-card-rating {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.star {
+  height: 17px;
+  width: 105px;
+}
+.star::before {
+  content: "";
+  display: block;
+  height: 17px;
+  background-image: url("../images/icons/star-icon.svg");
+  background-repeat: space no-repeat;
+  background-size: contain;
+}
+
+.star-5::before {
+  width: 90px;
+}
+.star-4::before {
+  width: 85px;
+}
+
+.star-3::before {
+  width: 70px;
+}
+.star-2::before {
+  width: 50px;
+}
+.star-1::before {
+  width: 35px;
 }
 
 .card-grid {
@@ -749,6 +892,7 @@ input[type="email"] {
 
 .button-favorite {
   background-color: #82b3d3;
+  border: 3px solid transparent;
 }
 
 .button--active {
@@ -759,7 +903,6 @@ input[type="email"] {
   font-size: 16px;
   line-height: 20px;
   margin: 0;
-  padding: 0;
   background-color: #f2f2f2;
   border-radius: 4px;
   padding: 8px 0;
@@ -840,6 +983,10 @@ input[type="email"] {
   align-items: center;
   padding: 0;
   margin: 0;
+}
+
+.footer-logo-link {
+  color: #000000;
 }
 
 .social-link:hover path {
