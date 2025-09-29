@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог</title>
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="images/favicon-32x32.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
@@ -21,45 +23,42 @@
                 href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="about.html">О Седоне</a>
+              <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" aria-current="page"
-                href="catalog.html">Гостиницы</a>
+              <a class="navigation-link" aria-current="page">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <svg class="icon" aria-hidden="true" focusable="false"
-                  width="20" height="20" fill="none"
+                  width="20" height="20"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="m19.026 17.05-3.71-3.7c1.002-1.3 1.704-3 1.704-4.9 0-4.4-3.61-8-8.023-8C4.585.45.975 4.15.975 8.55c0 4.4 3.61 8 8.022 8 1.805 0 3.51-.6 4.914-1.7l3.71 3.7 1.405-1.5Zm-10.029-2.5c-3.309 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z"
-                    fill="#000" />
+                    d="m19.026 17.05-3.71-3.7c1.002-1.3 1.704-3 1.704-4.9 0-4.4-3.61-8-8.023-8C4.585.45.975 4.15.975 8.55c0 4.4 3.61 8 8.022 8 1.805 0 3.51-.6 4.914-1.7l3.71 3.7 1.405-1.5Zm-10.029-2.5c-3.309 0-6.017-2.7-6.017-6s2.708-6 6.017-6c3.31 0 6.017 2.7 6.017 6s-2.707 6-6.017 6Z" />
                 </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">
+              <a class="navigation-link navigation-favorite" href="#">
+                <span class="navigation-favorite-count">12</span>
                 <svg class="icon" aria-hidden="true" focusable="false"
                   width="20" height="20"
-                  viewBox="0 0 18 17" fill="none"
+                  viewBox="0 0 18 17"
                   xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"
-                    fill="black" />
+                    d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z" />
                 </svg>
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
           </ul>
-          <a class="button" href="catalog.html">Хочу сюда!</a>
+          <a class="button navigation-button" href="catalog.html">Хочу сюда!</a>
         </nav>
       </header>
       <main class="main-container main-inner">
-        <!--фильтры каталога-->
         <section class="catalog-hotels">
           <div class="catalog-hotels-filter">
             <header class="inner-header">
@@ -104,8 +103,7 @@
                     <label class="control">
                       <input class="control-input visually-hidden"
                         type="checkbox"
-                        name="parking"
-                        checked>
+                        name="parking">
                       <span class="control-mark"></span>
                       <span class="control-label">
                         Парковка</span>
@@ -143,7 +141,7 @@
                         value="motel">
                       <span class="control-mark"></span>
                       <span class="control-label">
-                        Motel</span>
+                        Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
@@ -161,25 +159,33 @@
               <fieldset class="catalog-filter-group group-price">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                 <div class="range-wrapper-inputs">
-                  <input class="range-input" type="number" value="0"
-                    name="min-price" placeholder="от" required>
-                  <input class="range-input" type="number" value="9000"
-                    name="max-price" placeholder="до" required>
+                  <label class="price-label">
+                    <input class="range-input" type="number" value="0"
+                      name="min-price" placeholder="0" required>
+                    <span class="price-label-text">от</span>
+                  </label>
+                  <label class="price-label">
+                    <input class="range-input" type="number" value="9000"
+                      name="max-price" placeholder="9000" required>
+                    <span class="price-label-text">до</span>
+                  </label>
                 </div>
-                <div class="range-scale">
-                  <div class="range-bar" style="width:226px;">
-                    <button class="range-toggle toggle-min" type="button">
-                      <span class="visually-hidden">Изменить минимальную
-                        цену</span>
-                    </button>
-                    <button class="range-toggle toggle-max" type="button">
-                      <span class="visually-hidden">Изменить максимальную
-                        цену</span>
-                    </button>
+                <div class="range-wrapper-bar">
+                  <div class="range-scale">
+                    <div class="range-bar" style="width:226px;">
+                      <button class="range-toggle toggle-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную
+                          цену</span>
+                      </button>
+                      <button class="range-toggle toggle-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную
+                          цену</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </fieldset>
-              <div class="filer-botton">
+              <div class="filter-botton">
                 <button class="button button-favorite"
                   type="button">Применить</button>
                 <button class="button button-reset"
@@ -199,17 +205,17 @@
             <ul class="catalog-view">
               <li>
                 <button type="button" class="catalog-view-button view-catalog">
-                  <span class="visually-hidden">Показать список</span>
+                  <span class="visually-hidden">Показать каталог</span>
                 </button>
               </li>
               <li>
                 <button type="button" class="catalog-view-button view-cards">
-                  <span class="visually-hidden">Показать карточку</span>
+                  <span class="visually-hidden">Показать карточки</span>
                 </button>
               </li>
               <li>
                 <button type="button" class="catalog-view-button view-list">
-                  <span class="visually-hidden">Показать каталог</span>
+                  <span class="visually-hidden">Показать списком</span>
                 </button>
               </li>
             </ul>
@@ -325,7 +331,10 @@
           </div>
         </section>
         <section class="interest-search">
-          <h2 class="advantages-title">Подпишитесь на рассылку</h2>
+          <h2
+            class="main-header-title advantages-header-title--margin">Подпишитесь
+            на
+            рассылку</h2>
           <p
             class="advantages-header-description  advantages-header-description--margin">Только
             полезная информация и
@@ -393,7 +402,8 @@
         </section>
         <section class="footer-logo">
           <h2 class="visually-hidden">Партнеры</h2>
-          <a class="footer-logo-link" href="https://htmlacademy.ru/"
+          <a class="footer-logo-link"
+            href="https://htmlacademy.ru/intensive/htmlcss"
             target="_blank">
             <svg class="icon logo-partner"
               width="115" height="34" viewBox="0 0 115 34" fill="currentColor"
