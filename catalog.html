@@ -65,16 +65,8 @@
               <h1 class="inner-header-title">Гостиницы Седоны</h1>
               <ol class="breadcrumbs">
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link" href="index.html">
-                    <svg class="icon" width="13" height="15" viewBox="0 0 13 15"
-                      fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
-                        fill="white" />
-                      <path
-                        d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z"
-                        fill="white" />
-                    </svg>
+                  <a class="breadcrumbs-link breadrumbs-icon-home"
+                    href="index.html">
                   </a>
                 </li>
                 <li class="breadcrumbs-item">
@@ -161,12 +153,14 @@
                 <div class="range-wrapper-inputs">
                   <label class="price-label">
                     <input class="range-input" type="number" value="0"
-                      name="min-price" placeholder="0" required>
+                      name="min-price" placeholder="0" min="0" max="100000"
+                      required>
                     <span class="price-label-text">от</span>
                   </label>
                   <label class="price-label">
                     <input class="range-input" type="number" value="9000"
-                      name="max-price" placeholder="9000" required>
+                      name="max-price" placeholder="9000" min="0" max="100000"
+                      required>
                     <span class="price-label-text">до</span>
                   </label>
                 </div>
@@ -193,141 +187,146 @@
               </div>
             </form>
           </div>
-          <div class="header-catalog">
-            <h2 class="advantages-header-title title-catalog">
-              Найдено гостиниц: 38
-            </h2>
-            <select name="sort" class="select-control" aria-label="Сортировка">
-              <option value="popular">Сначала популярные</option>
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогие</option>
-            </select>
-            <ul class="catalog-view">
-              <li>
-                <button type="button" class="catalog-view-button view-catalog">
-                  <span class="visually-hidden">Показать каталог</span>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="catalog-view-button view-cards">
-                  <span class="visually-hidden">Показать карточки</span>
-                </button>
-              </li>
-              <li>
-                <button type="button" class="catalog-view-button view-list">
-                  <span class="visually-hidden">Показать списком</span>
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="catalog-hotel-cards">
-            <ul class="hotel-list">
-              <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image"
-                    src="images/catalog/hotel-amara-resopt-spa.jpg" width="300"
-                    height="212" alt="Отель Amara Resort&Spa">
-                  <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-                </a>
-                <p class="hotel-card-info">
-                  <span class="hotel-card-type">Гостиница</span>
-                  <span class="hotel-card-price">От 4000 ₽</span>
-                </p>
-                <a class="button hotel-card-button" href="#">Подробнее</a>
-                <button type="button"
-                  class="button hotel-card-button button-favorite">В
-                  избранное</button>
-                <div class="hotel-card-rating">
-                  <div class="star star-4"></div>
-                  <p class="hotel-rating-score">Рейтинг: 8,5</p>
-                </div>
-              </li>
-              <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image"
-                    src="images/catalog/hotel-villas-at-poco-diablo.jpg"
-                    width="300"
-                    height="212" alt="Отель Villas at Poco Diablo">
-                  <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-                </a>
-                <p class="hotel-card-info">
-                  <span class="hotel-card-type">Гостиница</span>
-                  <span class="hotel-card-price">От 5000 ₽</span>
-                </p>
-                <a class="button hotel-card-button" href="#">Подробнее</a>
-                <button type="button"
-                  class="button hotel-card-button button-favorite button--active">В
-                  избранное</button>
-                <div class="hotel-card-rating">
-                  <div class="star star-4"></div>
-                  <p class="hotel-rating-score">Рейтинг: 9,2</p>
-                </div>
-              </li>
-              <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image"
-                    src="images/catalog/hotel-desert-quail-inn.jpg" width="300"
-                    height="212" alt="Отель Desert Quail Inn">
-                  <h3 class="hotel-card-title">Desert Quail Inn</h3>
-                </a>
-                <p class="hotel-card-info">
-                  <span class="hotel-card-type">Гостиница</span>
-                  <span class="hotel-card-price">От 2500 ₽</span>
-                </p>
-                <a class="button hotel-card-button" href="#">Подробнее</a>
-                <button type="button"
-                  class="button hotel-card-button button-favorite">В
-                  избранное</button>
-                <div class="hotel-card-rating">
-                  <div class="star star-3"></div>
-                  <p class="hotel-rating-score">Рейтинг: 6,9</p>
-                </div>
-              </li>
-              <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image"
-                    src="images/catalog/hotel-greetree.jpg" width="300"
-                    height="212"
-                    alt="Отель GreenTree Inn">
-                  <h3 class="hotel-card-title">GreenTree Inn</h3>
-                </a>
-                <p class="hotel-card-info">
-                  <span class="hotel-card-type">Гостиница</span>
-                  <span class="hotel-card-price">От 1500 ₽</span>
-                </p>
-                <a class="button hotel-card-button" href="#">Подробнее</a>
-                <button type="button"
-                  class="button hotel-card-button button-favorite">В
-                  избранное</button>
-                <div class="hotel-card-rating">
-                  <div class="star star-2"></div>
-                  <p class="hotel-rating-score">Рейтинг: 5,0</p>
-                </div>
-              </li>
-            </ul>
-            <ol class="pagination">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current"
-                  aria-current="page">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-favorite" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-favorite" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link button-favorite" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <span
-                  class="pagination-link pagination-ellipsis"
-                  aria-hidden="true">…</span>
-              </li>
-              <li class="pagination-item" value="10">
-                <a class="pagination-link button-favorite" href="#">10</a>
-              </li>
-            </ol>
+          <div class="catalog-hotels">
+            <div class="header-catalog">
+              <h2 class="advantages-header-title title-catalog">
+                Найдено гостиниц: 38
+              </h2>
+              <select name="sort" class="select-control"
+                aria-label="Сортировка">
+                <option value="cheap">Сначала дешевые</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="expensive">Сначала дорогие</option>
+              </select>
+              <ul class="catalog-view">
+                <li>
+                  <button type="button"
+                    class="catalog-view-button view-catalog">
+                    <span class="visually-hidden">Показать каталогом</span>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="catalog-view-button view-cards">
+                    <span class="visually-hidden">Показать плиткой</span>
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="catalog-view-button view-list">
+                    <span class="visually-hidden">Показать списком</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="catalog-hotel-cards">
+              <ul class="hotel-list">
+                <li class="hotel-card">
+                  <a class="hotel-card-link" href="#">
+                    <img class="hotel-card-image"
+                      src="images/catalog/hotel-amara-resopt-spa.jpg"
+                      width="300"
+                      height="212" alt="Отель Amara Resort&Spa">
+                    <h3 class="hotel-card-title">Amara Resort & Spa</h3>
+                  </a>
+                  <p class="hotel-card-info">
+                    <span class="hotel-card-type">Гостиница</span>
+                    <span class="hotel-card-price">От 4000 ₽</span>
+                  </p>
+                  <a class="button hotel-card-button" href="#">Подробнее</a>
+                  <button type="button"
+                    class="button hotel-card-button button-favorite">В
+                    избранное</button>
+                  <div class="hotel-card-rating">
+                    <div class="star star-4"></div>
+                    <p class="hotel-rating-score">Рейтинг: 8,5</p>
+                  </div>
+                </li>
+                <li class="hotel-card">
+                  <a class="hotel-card-link" href="#">
+                    <img class="hotel-card-image"
+                      src="images/catalog/hotel-villas-at-poco-diablo.jpg"
+                      width="300"
+                      height="212" alt="Отель Villas at Poco Diablo">
+                    <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
+                  </a>
+                  <p class="hotel-card-info">
+                    <span class="hotel-card-type">Гостиница</span>
+                    <span class="hotel-card-price">От 5000 ₽</span>
+                  </p>
+                  <a class="button hotel-card-button" href="#">Подробнее</a>
+                  <button type="button"
+                    class="button hotel-card-button button-favorite button--active">В
+                    избранном</button>
+                  <div class="hotel-card-rating">
+                    <div class="star star-4"></div>
+                    <p class="hotel-rating-score">Рейтинг: 9,2</p>
+                  </div>
+                </li>
+                <li class="hotel-card">
+                  <a class="hotel-card-link" href="#">
+                    <img class="hotel-card-image"
+                      src="images/catalog/hotel-desert-quail-inn.jpg"
+                      width="300"
+                      height="212" alt="Отель Desert Quail Inn">
+                    <h3 class="hotel-card-title">Desert Quail Inn</h3>
+                  </a>
+                  <p class="hotel-card-info">
+                    <span class="hotel-card-type">Гостиница</span>
+                    <span class="hotel-card-price">От 2500 ₽</span>
+                  </p>
+                  <a class="button hotel-card-button" href="#">Подробнее</a>
+                  <button type="button"
+                    class="button hotel-card-button button-favorite">В
+                    избранное</button>
+                  <div class="hotel-card-rating">
+                    <div class="star star-3"></div>
+                    <p class="hotel-rating-score">Рейтинг: 6,9</p>
+                  </div>
+                </li>
+                <li class="hotel-card">
+                  <a class="hotel-card-link" href="#">
+                    <img class="hotel-card-image"
+                      src="images/catalog/hotel-greetree.jpg" width="300"
+                      height="212"
+                      alt="Отель GreenTree Inn">
+                    <h3 class="hotel-card-title">GreenTree Inn</h3>
+                  </a>
+                  <p class="hotel-card-info">
+                    <span class="hotel-card-type">Гостиница</span>
+                    <span class="hotel-card-price">От 1500 ₽</span>
+                  </p>
+                  <a class="button hotel-card-button" href="#">Подробнее</a>
+                  <button type="button"
+                    class="button hotel-card-button button-favorite">В
+                    избранное</button>
+                  <div class="hotel-card-rating">
+                    <div class="star star-2"></div>
+                    <p class="hotel-rating-score">Рейтинг: 5,0</p>
+                  </div>
+                </li>
+              </ul>
+              <ol class="pagination">
+                <li class="pagination-item">
+                  <a class="pagination-link pagination-current"
+                    aria-current="page">1</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-favorite" href="#">2</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-favorite" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                  <a class="pagination-link button-favorite" href="#">4</a>
+                </li>
+                <li class="pagination-item">
+                  <span
+                    class="pagination-link pagination-ellipsis">…</span>
+                </li>
+                <li class="pagination-item" value="10">
+                  <a class="pagination-link button-favorite" href="#">10</a>
+                </li>
+              </ol>
+            </div>
           </div>
         </section>
         <section class="interest-search">
@@ -336,7 +335,7 @@
             на
             рассылку</h2>
           <p
-            class="advantages-header-description  advantages-header-description--margin">Только
+            class="advantages-header-description advantages-header-description--margin">Только
             полезная информация и
             никакого
             спама, <br>честное бойскаутское!</p>
@@ -361,8 +360,7 @@
                   width="48" height="41" viewBox="0 0 48 41"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M35.1164 14.8044C35.2824 14.2584 35.1164 13.8564 34.3214 13.8564H31.6964C31.0284 13.8564 30.7204 14.2034 30.5534 14.5864C30.5534 14.5864 29.2184 17.7824 27.3274 19.8584C26.7154 20.4604 26.4374 20.6514 26.1034 20.6514C25.9364 20.6514 25.6854 20.4604 25.6854 19.9134V14.8044C25.6854 14.1484 25.5014 13.8564 24.9454 13.8564H20.8174C20.4004 13.8564 20.1494 14.1604 20.1494 14.4494C20.1494 15.0704 21.0954 15.2144 21.1924 16.9624V20.7604C21.1924 21.5934 21.0394 21.7444 20.7054 21.7444C19.8154 21.7444 17.6504 18.5334 16.3654 14.8594C16.1164 14.1444 15.8644 13.8564 15.1934 13.8564H12.5664C11.8164 13.8564 11.6664 14.2034 11.6664 14.5864C11.6664 15.2684 12.5564 18.6564 15.8114 23.1374C17.9814 26.1974 21.0364 27.8564 23.8194 27.8564C25.4884 27.8564 25.6944 27.4884 25.6944 26.8534V24.5404C25.6944 23.8034 25.8524 23.6564 26.3814 23.6564C26.7714 23.6564 27.4384 23.8484 28.9964 25.3234C30.7764 27.0724 31.0694 27.8564 32.0714 27.8564H34.6964C35.4464 27.8564 35.8224 27.4884 35.6064 26.7604C35.3684 26.0364 34.5184 24.9854 33.3914 23.7384C32.7794 23.0284 31.8614 22.2634 31.5824 21.8804C31.1934 21.3894 31.3044 21.1704 31.5824 20.7334C31.5824 20.7334 34.7824 16.3074 35.1154 14.8044H35.1164Z"
-                    fill="#83B3D3" />
+                    d="M35.1164 14.8044C35.2824 14.2584 35.1164 13.8564 34.3214 13.8564H31.6964C31.0284 13.8564 30.7204 14.2034 30.5534 14.5864C30.5534 14.5864 29.2184 17.7824 27.3274 19.8584C26.7154 20.4604 26.4374 20.6514 26.1034 20.6514C25.9364 20.6514 25.6854 20.4604 25.6854 19.9134V14.8044C25.6854 14.1484 25.5014 13.8564 24.9454 13.8564H20.8174C20.4004 13.8564 20.1494 14.1604 20.1494 14.4494C20.1494 15.0704 21.0954 15.2144 21.1924 16.9624V20.7604C21.1924 21.5934 21.0394 21.7444 20.7054 21.7444C19.8154 21.7444 17.6504 18.5334 16.3654 14.8594C16.1164 14.1444 15.8644 13.8564 15.1934 13.8564H12.5664C11.8164 13.8564 11.6664 14.2034 11.6664 14.5864C11.6664 15.2684 12.5564 18.6564 15.8114 23.1374C17.9814 26.1974 21.0364 27.8564 23.8194 27.8564C25.4884 27.8564 25.6944 27.4884 25.6944 26.8534V24.5404C25.6944 23.8034 25.8524 23.6564 26.3814 23.6564C26.7714 23.6564 27.4384 23.8484 28.9964 25.3234C30.7764 27.0724 31.0694 27.8564 32.0714 27.8564H34.6964C35.4464 27.8564 35.8224 27.4884 35.6064 26.7604C35.3684 26.0364 34.5184 24.9854 33.3914 23.7384C32.7794 23.0284 31.8614 22.2634 31.5824 21.8804C31.1934 21.3894 31.3044 21.1704 31.5824 20.7334C31.5824 20.7334 34.7824 16.3074 35.1154 14.8044H35.1164Z" />
                 </svg>
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
@@ -374,8 +372,7 @@
                   width="48" height="41" viewBox="0 0 48 41"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M31.785 12.9557L15.8405 19.1042C14.7523 19.5413 14.7586 20.1483 15.6408 20.419L19.7344 21.696L29.2058 15.7201C29.6537 15.4477 30.0629 15.5942 29.7265 15.8928L22.0528 22.8183H22.051L22.0528 22.8192L21.7705 27.0387C22.1841 27.0387 22.3667 26.8489 22.5987 26.625L24.5871 24.6915L28.7229 27.7464C29.4855 28.1664 30.0332 27.9506 30.2229 27.0405L32.9379 14.2453C33.2158 13.1311 32.5126 12.6266 31.785 12.9557Z"
-                    fill="#83B3D3" />
+                    d="M31.785 12.9557L15.8405 19.1042C14.7523 19.5413 14.7586 20.1483 15.6408 20.419L19.7344 21.696L29.2058 15.7201C29.6537 15.4477 30.0629 15.5942 29.7265 15.8928L22.0528 22.8183H22.051L22.0528 22.8192L21.7705 27.0387C22.1841 27.0387 22.3667 26.8489 22.5987 26.625L24.5871 24.6915L28.7229 27.7464C29.4855 28.1664 30.0332 27.9506 30.2229 27.0405L32.9379 14.2453C33.2158 13.1311 32.5126 12.6266 31.785 12.9557Z" />
                 </svg>
                 <span class="visually-hidden">Телеграм</span>
               </a>
@@ -387,8 +384,7 @@
                   width="48" height="41" viewBox="0 0 48 41"
                   fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
-                    d="M31.9402 12.3564H16.5074C14.6467 12.3564 13.3333 13.9502 13.3333 15.7564V25.8502C13.3333 27.7627 14.6467 29.3564 16.5074 29.3564H32.1591C33.8009 29.3564 35.3333 27.7627 35.3333 25.9564V15.7564C35.1143 13.9502 33.8009 12.3564 31.9402 12.3564ZM20.9949 24.8939V16.8189L28.3283 20.8564L20.9949 24.8939Z"
-                    fill="#83B3D3" />
+                    d="M31.9402 12.3564H16.5074C14.6467 12.3564 13.3333 13.9502 13.3333 15.7564V25.8502C13.3333 27.7627 14.6467 29.3564 16.5074 29.3564H32.1591C33.8009 29.3564 35.3333 27.7627 35.3333 25.9564V15.7564C35.1143 13.9502 33.8009 12.3564 31.9402 12.3564ZM20.9949 24.8939V16.8189L28.3283 20.8564L20.9949 24.8939Z" />
                 </svg>
                 <span class="visually-hidden">Youtube</span>
               </a>
