@@ -61,7 +61,7 @@ body {
   border-radius: 4px;
 
   appearance: none;
-  transition: border 0.25 ease-in-out, background-color 0.25 ease-in-out;
+  transition: border 0.25s ease-in-out, background-color 0.25s ease-in-out;
 }
 
 .navigation-button {
@@ -368,7 +368,7 @@ img {
   text-decoration: none;
   color: inherit;
 
-  transition: color 0.25 ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .service-icon-home {
@@ -460,7 +460,7 @@ img {
   border-radius: 4px 0 0 4px;
   border: 3px solid #f2f2f2;
 
-  transition: border 0.25 ease-in-out;
+  transition: border 0.25s ease-in-out;
 }
 
 .interest-search-bg {
@@ -804,6 +804,8 @@ img {
   cursor: pointer;
   min-width: 13px;
   min-height: 15px;
+
+  transition: opacity 0.25s ease-in-out;
 }
 
 .breadrumbs-icon-home {
@@ -856,6 +858,8 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 16px 16px;
+
+  transition: border-color 0.25s ease-in-out;
 }
 
 .catalog-view-button:focus {
@@ -946,6 +950,7 @@ img {
 
 .button-favorite:not(:disabled):active {
   border-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-favorite:not(:disabled):hover,
@@ -1039,6 +1044,8 @@ img {
   text-decoration: none;
   color: inherit;
   outline: none;
+
+  transition: opacity 0.25s ease-in-out;
 }
 
 .hotel-card-link:hover {
@@ -1194,6 +1201,8 @@ img {
 
   border-radius: 4px;
   background-color: #82b3d3;
+
+  transition: background-color 0.25s ease-in-out;
 }
 
 .pagination-link [aria-current="page"] {
@@ -1235,7 +1244,7 @@ img {
   text-align: center;
   color: inherit;
 
-  transition: color 0.25 ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .main-footer {
@@ -1260,7 +1269,7 @@ img {
   display: block;
 
   color: #83b3d3;
-  transition: color 0.25 ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .social-link svg {
@@ -1293,7 +1302,7 @@ img {
   display: block;
   color: inherit;
 
-  transition: color 0.25 ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .footer-logo-link svg {
