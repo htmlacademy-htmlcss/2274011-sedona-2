@@ -472,8 +472,7 @@ img {
   color: #000000;
 }
 
-.interest-search-form
-  input[type="email"]:disabled
+.interest-search-form:disabled
   + .interest-search-form
   button {
   opacity: 0.6;
