@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Елизавета Ануфриева](https://up.htmlacademy.ru/htmlcss-individual/2/user/2274011).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
 
 ---
 
